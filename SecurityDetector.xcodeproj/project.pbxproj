@@ -11,7 +11,7 @@
 		7EB38F0D2226A966005C6807 /* DebugDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB38F062226A965005C6807 /* DebugDetector.swift */; };
 		7EB38F0E2226A966005C6807 /* SecurityDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB38F072226A965005C6807 /* SecurityDetector.swift */; };
 		7EB38F0F2226A966005C6807 /* SecurityDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB38F092226A966005C6807 /* SecurityDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7EB38F102226A966005C6807 /* libASM.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB38F0A2226A966005C6807 /* libASM.h */; };
+		7EB38F102226A966005C6807 /* libASM.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB38F0A2226A966005C6807 /* libASM.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7EB38F112226A966005C6807 /* readSys.s in Sources */ = {isa = PBXBuildFile; fileRef = 7EB38F0B2226A966005C6807 /* readSys.s */; };
 /* End PBXBuildFile section */
 

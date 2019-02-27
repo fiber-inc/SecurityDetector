@@ -6,7 +6,7 @@
 //  Copyright © 2019 Hyperion. All rights reserved.
 //
 
-module ASMDetector {
+module SecurityDetector {
   header "SecurityDetector.h"
   export *
 }
