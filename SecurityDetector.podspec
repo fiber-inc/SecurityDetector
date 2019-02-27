@@ -37,6 +37,9 @@ Pod::Spec.new do |s|
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   
+  s.pod_target_xcconfig = {'SWIFT_INCLUDE_PATHS' => '$(SRCROOT)/SecurityDetector/SecurityDetector/**','LIBRARY_SEARCH_PATHS' => '$(SRCROOT)/SecurityDetector/SecurityDetector/'}
+  s.preserve_paths  = '/SecurityDetector/module.modulemap'
+
   # s.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => 'SecurityDetector/SecurityDetector/*.h' }
 
 end
