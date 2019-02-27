@@ -1,16 +1,11 @@
 //
-//  SecurityDetector.h
+//  BridgingHeader.h
 //  SecurityDetector
 //
-//  Created by Steven Koposov on 2/27/19.
+//  Created by Steven Koposov on 2/25/19.
 //  Copyright © 2019 Hyperion. All rights reserved.
 //
 
+#import <sys/sysctl.h>
 
-#import <UIKit/UIKit.h>
-
-//! Project version number for SecurityDetector.
-FOUNDATION_EXPORT double SecurityDetectorVersionNumber;
-
-//! Project version string for SecurityDetector.
-FOUNDATION_EXPORT const unsigned char SecurityDetectorVersionString[];
+int readSys(int *, u_int, void *, size_t *);
