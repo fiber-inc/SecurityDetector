@@ -61,7 +61,7 @@
 				7EB38F092226A966005C6807 /* SecurityDetector.h */,
 				7EB38F182226D0FB005C6807 /* module.modulemap */,
 				7EB38F042226A965005C6807 /* Detectors */,
-				7EB38F082226A966005C6807 /* asm */,
+				7EB38F082226A966005C6807 /* ASM */,
 				7EB38EFD2226A883005C6807 /* Info.plist */,
 			);
 			path = SecurityDetector;
@@ -76,13 +76,13 @@
 			path = Detectors;
 			sourceTree = "<group>";
 		};
-		7EB38F082226A966005C6807 /* asm */ = {
+		7EB38F082226A966005C6807 /* ASM */ = {
 			isa = PBXGroup;
 			children = (
 				7EB38F0A2226A966005C6807 /* libASM.h */,
 				7EB38F0B2226A966005C6807 /* readSys.s */,
 			);
-			path = asm;
+			path = ASM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

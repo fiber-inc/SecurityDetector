@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   # s.source       = { :git => "https://github/samwize/CryptoCoreData", :tag => "#{s.version}" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source_files  = 'SecurityDetector', 'SecurityDetector/*.swift', 'SecurityDetector/Detectors/*.swift', 'SecurityDetector/Detectors/asm*.{h,s}'
+  s.source_files  = 'SecurityDetector', 'SecurityDetector/*.swift', 'SecurityDetector/Detectors/*.swift', 'SecurityDetector/ASM*.{h,s}'
   s.public_header_files = "SecurityDetector", "SecurityDetector/SecurityDetector/*.h"
   
 
