@@ -21,12 +21,11 @@ Pod::Spec.new do |s|
   s.swift_version = '4.2'
   
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source       = { :git => 'https://github.com/Steven-koposov/SecurityDetector' }
-  # s.source       = { :path => '/Users/stepan_koposov/Desktop/CryptoCoreData/CryptoCoreData' }
+  s.source       = { :git => 'https://github.com/Steven-koposov/SecurityDetector.git' }
   # s.source       = { :git => "https://github/samwize/CryptoCoreData", :tag => "#{s.version}" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source_files  = "SecurityDetector", "SecurityDetector/**/*.{h,m,a,c,swift}"
+  s.source_files  = 'SecurityDetector', 'SecurityDetector/*.swift', 'SecurityDetector/Detectors/*.swift', 'SecurityDetector/Detectors/asm*.{h,a}'
   s.public_header_files = "SecurityDetector", "SecurityDetector/SecurityDetector/*.h"
   
 

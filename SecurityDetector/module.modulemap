@@ -8,5 +8,5 @@
 
 module ASMDetector {
   export *
-  header "BridgingHeader.h"
+  header "SecurityDetector.h"
 }
