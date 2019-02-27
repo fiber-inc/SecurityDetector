@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.platform     = :ios, "10.0"
   s.ios.deployment_target = '10.0'
-  s.swift_version = '4.0'
+  s.swift_version = '4.2'
   
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.source       = { :git => 'https://github.com/Steven-koposov/SecurityDetector' }
