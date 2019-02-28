@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class JailBreakDetector {
+final class JailBreakDetector {
   
   static func isJailBroken() -> Bool {
     #if !(TARGET_IPHONE_SIMULATOR)
