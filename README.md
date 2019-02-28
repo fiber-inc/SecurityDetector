@@ -72,7 +72,7 @@ That's very easy to use a SecurityDetector. Only write this few lines et voila!
     // clear your cache data
     // clear your cookies
     // clear you CoreData context and connection
-    // remove/clear you Network connection and removeAllCachedResponses
+    // remove/clear your Network connection and removeAllCachedResponses
     // reset your UserDefaults and Keychain
     // quickly sell your digital currency :)
     // call the police :)
