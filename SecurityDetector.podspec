@@ -1,45 +1,34 @@
 Pod::Spec.new do |s|
  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "SecurityDetector"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "Debugging/Jailbreak Detectors."
   s.description  = <<-DESC
-  A much much longer description of SecurityDetector.
+    Security Detector provide jailbreak detection and debug attach detection.
                    DESC
-  s.homepage      = "http://EXAMPLE/SecurityDetector"
-  s.module_name   = 'SecurityDetector'  
+  s.homepage     = "https://github.com/Steven-koposov/SecurityDetector"
+  s.module_name  = 'SecurityDetector'  
 
-  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.license      = "Copyleft"
-  
-  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  # ―――  Spec License & Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  s.license      = "MIT license"  
   s.author       = { "Steven" => "stepan.koposov@gmail.com" }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.platform     = :ios, "10.0"
+  s.platform              = :ios, "10.0"
   s.ios.deployment_target = '10.0'
-  s.swift_version = '4.2'
+  s.swift_version         = '4.2'
   
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source       = { :git => 'https://github.com/Steven-koposov/SecurityDetector.git' }
-  # s.source       = { :git => "https://github/samwize/CryptoCoreData", :tag => "#{s.version}" }
+  s.source              = { :git => 'https://github.com/Steven-koposov/SecurityDetector.git' }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source_files  = 'SecurityDetector', 'SecurityDetector/*.swift', 'SecurityDetector/Detectors/*.swift', 'SecurityDetector/ASM/*.{h,s}'
+  s.source_files        = 'SecurityDetector', 'SecurityDetector/*.swift', 'SecurityDetector/Detectors/*.swift', 'SecurityDetector/ASM/*.{h,s}'
   s.public_header_files = "SecurityDetector", "SecurityDetector/SecurityDetector/*.h"
   
-
-  # s.preserve_paths = '*.a'
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-
-   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  # ――― Frameworks ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.frameworks    = 'Foundation'
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  
   s.pod_target_xcconfig = {'SWIFT_INCLUDE_PATHS' => '$(SRCROOT)/SecurityDetector/**','LIBRARY_SEARCH_PATHS' => '$(SRCROOT)/SecurityDetector/'}
   s.preserve_paths  = 'SecurityDetector/module.modulemap'
-
-  # s.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => 'SecurityDetector/SecurityDetector/*.h' }
-
 end
