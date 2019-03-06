@@ -26,7 +26,7 @@ Security Detector provide jailbreak detection and debug attach detection.
 * In your project directory, do `pod init` to create a Podfile.
 * Specify it in your `Podfile`: 
 ```ruby
-    pod 'SecurityDetector', :git => 'https://github.com/Steven-koposov/SecurityDetector.git'
+    pod 'SecurityDetector', :git => 'https://github.com/fiber-inc/SecurityDetector'
 ```
 * Run `pod install`
 

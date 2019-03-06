@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "SecurityDetector"
-  s.version      = "1.0.0"
+  s.version      = "1.0.2"
   s.summary      = "Debugging/Jailbreak Detectors."
   s.description  = <<-DESC
     Security Detector provide jailbreak detection and debug attach detection.
                    DESC
-  s.homepage     = "https://github.com/Steven-koposov/SecurityDetector"
+  s.homepage     = "https://github.com/fiber-inc/SecurityDetector"
   s.module_name  = 'SecurityDetector'  
 
   # ―――  Spec License & Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.swift_version         = '4.2'
   
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source              = { :git => 'https://github.com/Steven-koposov/SecurityDetector.git' }
+  s.source              = { :git => 'https://github.com/fiber-inc/SecurityDetector' }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.source_files        = 'SecurityDetector', 'SecurityDetector/*.swift', 'SecurityDetector/Detectors/*.swift', 'SecurityDetector/ASM/*.{h,s}'
