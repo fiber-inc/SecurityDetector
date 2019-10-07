@@ -63,7 +63,7 @@ fileprivate struct System {
                       "/usr/share",
                       ]
   
-  static let schemes = ["cydia ://package/com.example.package"]
+  static let schemes = ["cydia://package/com.example.package"]
   
   static let jailbreakTextFile = "/private/jailbreak.txt"
   
