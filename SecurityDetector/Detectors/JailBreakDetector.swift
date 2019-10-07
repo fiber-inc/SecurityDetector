@@ -13,10 +13,10 @@ import UIKit
 final class JailBreakDetector {
   
   static func isJailBroken() -> Bool {
-    #if !(TARGET_IPHONE_SIMULATOR)
-    return detectFiles() || detectSchemes() || canSpoofing() || detectFork()
-    #else
+    #if targetEnvironment(simulator)
     return false
+    #else
+    return detectFiles() || detectSchemes() || canSpoofing() || detectFork()
     #endif
   }
   
