@@ -13,10 +13,10 @@ import UIKit
 final class JailBreakDetector {
   
   static func isJailBroken() -> Bool {
-    #if !(TARGET_IPHONE_SIMULATOR)
-    return detectFiles() || detectSchemes() || canSpoofing() || detectFork()
-    #else
+    #if targetEnvironment(simulator)
     return false
+    #else
+    return detectFiles() || detectSchemes() || canSpoofing() || detectFork()
     #endif
   }
   
@@ -29,9 +29,12 @@ fileprivate struct System {
     "/bin/sh",
     "/etc/apt",
     "/bin/bash",
+    "/usr/bin/ssh",
+    "/usr/bin/sshd",
     "/usr/sbin/sshd",
     "/etc/ssh/sshd_config",
     "/usr/libexec/ssh-keysign",
+    "/usr/libexec/sftp-server",
     "/private/var/stash",
     "/private/var/lib/apt/",
     "/private/var/lib/cydia",
@@ -49,6 +52,7 @@ fileprivate struct System {
     "/Applications/IntelliScreen.app",
     "/private/var/mobile/Library/SBSettings/Themes",
     "/Library/MobileSubstrate/MobileSubstrate.dylib",
+    "/Library/MobileSubstrate/CydiaSubstrate.dylib",
     "/System/Library/LaunchDaemons/com.ikey.bbot.plist",
     "/Library/MobileSubstrate/DynamicLibraries/Veency.plist",
     "/Library/MobileSubstrate/DynamicLibraries/LiveClock.plist",
@@ -63,7 +67,7 @@ fileprivate struct System {
                       "/usr/share",
                       ]
   
-  static let schemes = ["cydia ://package/com.example.package"]
+  static let schemes = ["cydia://package/com.example.package"]
   
   static let jailbreakTextFile = "/private/jailbreak.txt"
   

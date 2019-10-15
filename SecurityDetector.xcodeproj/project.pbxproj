@@ -24,7 +24,6 @@
 		7EB38F092226A966005C6807 /* SecurityDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityDetector.h; sourceTree = "<group>"; };
 		7EB38F0A2226A966005C6807 /* libASM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libASM.h; sourceTree = "<group>"; };
 		7EB38F0B2226A966005C6807 /* readSys.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = readSys.s; sourceTree = "<group>"; };
-		7EB38F182226D0FB005C6807 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +58,6 @@
 			children = (
 				7EB38F072226A965005C6807 /* SecurityDetector.swift */,
 				7EB38F092226A966005C6807 /* SecurityDetector.h */,
-				7EB38F182226D0FB005C6807 /* module.modulemap */,
 				7EB38F042226A965005C6807 /* Detectors */,
 				7EB38F082226A966005C6807 /* ASM */,
 				7EB38EFD2226A883005C6807 /* Info.plist */,
@@ -312,6 +310,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SecurityDetector/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,6 +339,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SecurityDetector/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
