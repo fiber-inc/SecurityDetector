@@ -65,7 +65,7 @@ That's very easy to use a SecurityDetector. Only write this few lines et voila!
     // debugger detection
     SecurityDetector.detectDebugging {
       print("Holy Moly, Houston we have a problem. Debugger attached!")
-      missionImpossible()
+      self.missionImpossible()
     }
 
     func missionImpossible() {
